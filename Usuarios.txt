@@ -1,0 +1,122 @@
+[
+    {
+        "id": 9,
+        "usuario": "Blacked",
+        "contraseña": "miclave",
+        "nombre": "Federico",
+        "apellido": "Andrade",
+        "perfil": "admin",
+        "sector": "todos",
+        "estado": "activo"
+    },
+    {
+        "id": 11,
+        "usuario": "AleAlma",
+        "contraseña": "miclave",
+        "nombre": "Alejandro",
+        "apellido": "Almada",
+        "perfil": "admin",
+        "sector": "todos",
+        "estado": "activo"
+    },
+    {
+        "id": 12,
+        "usuario": "Elchoborra",
+        "contraseña": "miclave",
+        "nombre": "Enrique",
+        "apellido": "Pinti",
+        "perfil": "admin",
+        "sector": "todos",
+        "estado": "activo"
+    },
+    {
+        "id": 13,
+        "usuario": "Manu",
+        "contraseña": "miclave",
+        "nombre": "manuel",
+        "apellido": "Chorizo",
+        "perfil": "cocinero",
+        "sector": "cocina",
+        "estado": "activo"
+    },
+    {
+        "id": 14,
+        "usuario": "Ferdi",
+        "contraseña": "miclave",
+        "nombre": "Fernando",
+        "apellido": "diaz",
+        "perfil": "cocinero",
+        "sector": "cocina",
+        "estado": "activo"
+    },
+    {
+        "id": 15,
+        "usuario": "RuizElena",
+        "contraseña": "miclave",
+        "nombre": "Elena",
+        "apellido": "Ruiz",
+        "perfil": "mozo",
+        "sector": "mozos",
+        "estado": "activo"
+    },
+    {
+        "id": 16,
+        "usuario": "CelesteDiaz",
+        "contraseña": "miclave",
+        "nombre": "Celeste",
+        "apellido": "Diaz",
+        "perfil": "mozo",
+        "sector": "mozos",
+        "estado": "activo"
+    },
+    {
+        "id": 17,
+        "usuario": "NDiaz",
+        "contraseña": "miclave",
+        "nombre": "Natali",
+        "apellido": "Diaz",
+        "perfil": "cervecero",
+        "sector": "cerveceros",
+        "estado": "activo"
+    },
+    {
+        "id": 18,
+        "usuario": "Paulito",
+        "contraseña": "miclave",
+        "nombre": "Paul",
+        "apellido": "Fernandez",
+        "perfil": "cervecero",
+        "sector": "cerveceros",
+        "estado": "activo"
+    },
+    {
+        "id": 19,
+        "usuario": "Piazita",
+        "contraseña": "miclave",
+        "nombre": "roberto",
+        "apellido": "Piazza",
+        "perfil": "bartender",
+        "sector": "bartenders",
+        "estado": "activo"
+    },
+    {
+        "id": 20,
+        "usuario": "Elema",
+        "contraseña": "miclave",
+        "nombre": "Emanuel",
+        "apellido": "Ortega",
+        "perfil": "bartender",
+        "sector": "bartenders",
+        "estado": "activo"
+    },
+    {
+        "id": 21,
+        "usuario": "Baron",
+        "contraseña": "miclave",
+        "nombre": "Gimena",
+        "apellido": "Baron",
+        "perfil": "bartender",
+        "sector": "bartenders",
+        "estado": "activo"
+    }
+]
