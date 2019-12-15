@@ -168,4 +168,24 @@ class middle
 			return $res;
 		}
 	}
+	function autorizadoPreparar($req, $res ,$next){
+		$usuario = $req->getAttribute('usuario');
+		if($usuario->perfil == 'bartender' || $usuario->perfil == 'cocina' ){	
+			$res = $next($req,$res);
+			return $res;
+		}else{
+			$res->getBody()->write('Usuario no autorizado para preparar pedidos');
+			return $res;
+		}
+	}
+	function autorizadoMozo($req, $res ,$next){
+		$usuario = $req->getAttribute('usuario');
+		if($usuario->perfil == 'mozo' ){	
+			$res = $next($req,$res);
+			return $res;
+		}else{
+			$res->getBody()->write('Usuario no autorizado');
+			return $res;
+		}
+	}
 }

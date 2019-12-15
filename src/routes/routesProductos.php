@@ -23,6 +23,8 @@ return function (App $app) {
             $producto->tiempo_preparacion = $req->getParsedBody()['tiempo_preparacion'];
             $producto->cant_vendida = 0;
             $producto->precio = $req->getParsedBody()['precio'];
+            $responsable = $req->getParsedBody()['responsable'];
+            $producto->responsable = $responsable;
             try {
                 $producto->save();
                 $res->getBody()->write('Alta Existosa. Datos del producto : ' . $producto);

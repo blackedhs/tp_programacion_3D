@@ -3,7 +3,7 @@
 use Slim\App;
 use Slim\Http\Request;
 use Slim\Http\Response;
-use App\Models\ORM\cdApi;
+// use App\Models\ORM\cdApi;
 use App\Models\ORM\comanda;
 use App\Models\ORM\mesa;
 
@@ -18,6 +18,7 @@ return function (App $app) {
             $mesa = new mesa;
             $mesa->codigo = $req->getParsedBody()['codigo'];
             try {
+                $mesa->estado = 'lista';
                 $mesa->save();
                 $res->getBody()->write('Alta Existosa. Datos de la mesa : ' . $mesa);
             } catch (Exception $e) {

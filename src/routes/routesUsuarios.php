@@ -4,7 +4,6 @@ use Slim\App;
 use Slim\Http\Request;
 use Slim\Http\Response;
 use App\Models\ORM\comandaControler;
-use App\Models\ORM\cdApi;
 use App\Models\ORM\comanda;
 use App\Models\ORM\usuario;
 
@@ -23,7 +22,8 @@ return function (App $app) {
             $usuario->nombre = $req->getParsedBody()['nombre'];
             $usuario->apellido = $req->getParsedBody()['apellido'];
             $usuario->usuario = $req->getParsedBody()['usuario'];
-            $usuario->contraseña = $req->getParsedBody()['contraseña'];
+            $contraseña = $req->getParsedBody()['contraseña'];
+            $usuario->contraseña = crypt($contraseña,'masflow2');
             $usuario->estado = $req->getParsedBody()['estado'];
             $usuario->sector = $req->getParsedBody()['sector'];
             $usuario->perfil = $req->getParsedBody()['perfil'];
@@ -42,7 +42,8 @@ return function (App $app) {
             if (count($usuario) == 1) {
                 $usuario[0]->nombre = $req->getParsedBody()['nombre'];
                 $usuario[0]->apellido = $req->getParsedBody()['apellido'];
-                $usuario[0]->contraseña = $req->getParsedBody()['contraseña'];
+                $contraseña = crypt($req->getParsedBody()['contraseña'],'masflow2');
+                $usuario[0]->contraseña = $contraseña;
                 $usuario[0]->estado = $req->getParsedBody()['estado'];
                 $usuario[0]->sector = $req->getParsedBody()['sector'];
                 $usuario[0]->perfil = $req->getParsedBody()['perfil'];

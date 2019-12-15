@@ -33,12 +33,13 @@ return function (App $app) {
       return $response;
     });
     $this->get('/crearToken', function (Request $request, Response $response) {
+      $contraseña = crypt($_GET['contraseña'],'masflow2');
       $datos = array(
         'id' => $_GET['id'],
         'nombre' => $_GET['nombre'],
         'apellido' => $_GET['apellido'],
         'usuario' => $_GET['usuario'],
-        'contraseña' => $_GET['contraseña'],
+        'contraseña' => $contraseña,
         'estado' => $_GET['estado'],
         'sector' => $_GET['sector'],
         'perfil' => $_GET['perfil'],
